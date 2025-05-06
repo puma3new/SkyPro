@@ -1,6 +1,6 @@
 from datetime import datetime
 
-import masks  # type: ignore
+from src import masks
 
 
 def mask_account_card(card_number: str) -> str:
