@@ -1,25 +1,19 @@
-[project]
-name = "skypro"
-version = "0.1.0"
-description = ""
-authors = [
-    {name = "Your Name",email = "you@example.com"}
-]
-readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-]
-
 [tool.poetry]
-packages = [{include = "skypro", from = "src"}]
+name = "skypro"
+version = "0.11.2"
+description = ""
+authors = ["p3n <puma3new@bk.ru>"]
+readme = "README.md"
+packages = [{include = "src"}]
 
+[tool.poetry.dependencies]
+python = ">=3.11"
 
 [tool.poetry.group.lint.dependencies]
 flake8 = "^7.2.0"
 mypy = "^1.15.0"
 black = "^25.1.0"
 isort = "^6.0.1"
-
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
