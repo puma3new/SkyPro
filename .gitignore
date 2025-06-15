@@ -46,6 +46,5 @@ dmypy.json
 
 # Other
 *.env
-*.env.*
 *.bak
 *.tmp
