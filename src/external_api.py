@@ -48,9 +48,9 @@ def check_amount(transaction: List[Dict]) -> float:
         except requests.exceptions.RequestException as e:
             print(f"Ошибка запроса: {e}")
             print(f"Результат: {transaction_amount} {currency_code}")
-            return transaction_amount # возвращаем None в случае ошибки
+            return transaction_amount
     else:
         # если неизвестная валюта (не работаем с которой)
         print(f"В транзакции используется неизвестная валюта - {currency_code}")
         print(f"Результат: {transaction_amount} {currency_code}")
-        return transaction_amount   # возвращаем None, чтобы избежать ошибки
+        return transaction_amount 
