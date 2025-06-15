@@ -1,6 +1,3 @@
-from src import utils, external_api
+from src import masks
 
-operations = utils.get_operations_from_json("/home/p3n/ПИТОН/SkyPro/data/operations.json")
-print(f"Список:\n{operations[1]}")
-
-amount = external_api.check_amount(operations[1])
+masks.get_mask_card_number(2222222222222222)
