@@ -44,4 +44,4 @@ def test_check_amount_unknown(capsys):
     result = check_amount(transaction_unknown)
     captured = capsys.readouterr()
     assert "неизвестная валюта" in captured.out
-    assert result is None
+    assert result == 500.0  # Теперь ожидаем исходную сумму
